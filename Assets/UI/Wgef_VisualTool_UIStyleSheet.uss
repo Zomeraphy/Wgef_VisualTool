@@ -1,0 +1,197 @@
+.button_Load {
+    align-items: stretch;
+    justify-content: flex-start;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 23px;
+    background-color: rgb(0, 0, 0);
+    font-size: 60px;
+    -unity-font-style: normal;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out-sine;
+}
+
+.button_Load:hover {
+    align-items: stretch;
+    justify-content: flex-start;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 23px;
+    background-color: rgb(0, 0, 0);
+    font-size: 60px;
+    -unity-font-style: normal;
+    color: rgb(255, 255, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    scale: 1.03 1.03;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out-sine;
+}
+
+.button_Load:active {
+    align-items: stretch;
+    justify-content: flex-start;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 23px;
+    background-color: rgb(0, 0, 0);
+    font-size: 60px;
+    -unity-font-style: normal;
+    color: rgba(255, 255, 0, 0.8);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out-sine;
+    scale: 1 1;
+}
+
+.unity-collection-view__item {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+}
+
+.unity-collection-view__item--selected {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 0);
+}
+
+GridBackground {
+    --grid-background-color: rgb(40, 40, 40);
+    --line-color: rgba(192, 196, 192, 0.1);
+    --thick-line-color: rgba(193, 196, 192, 0.1);
+    --spacing: 15;
+}
+
+.node #title {
+    min-height: 50px;
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+}
+
+.node #title-label {
+    font-size: 24px;
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.node #selection-border {
+    border-left-color: rgba(255, 255, 0, 0);
+    border-right-color: rgba(255, 255, 0, 0);
+    border-top-color: rgba(255, 255, 0, 0);
+    border-bottom-color: rgba(255, 255, 0, 0);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+.node #node-border {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    background-color: rgb(51, 51, 51);
+}
+
+.port {
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-height: 40px;
+}
+
+.button_Toolbar:hover {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-right: 16px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 0);
+    scale: 1.01 1.01;
+    cursor: url("project://database/Assets/Images/Hand.png?fileID=2800000&guid=0f2c5cb33c68e7b4481c0a6eb03fb673&type=3#Hand");
+}
+
+.button_Toolbar:active {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-right: 16px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 0, 0.8);
+    -unity-font-style: normal;
+    scale: 1 1;
+    cursor: url("project://database/Assets/Images/Hand.png?fileID=2800000&guid=0f2c5cb33c68e7b4481c0a6eb03fb673&type=3#Hand");
+}
+
+.button_Toolbar {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-right: 16px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    -unity-font-style: normal;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    justify-content: space-around;
+}
+
+Button:hover {
+    cursor: url("project://database/Assets/Images/Hand.png?fileID=2800000&guid=0f2c5cb33c68e7b4481c0a6eb03fb673&type=3#Hand");
+}

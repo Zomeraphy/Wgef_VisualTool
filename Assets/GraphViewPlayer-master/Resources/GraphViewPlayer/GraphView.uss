@@ -1,0 +1,155 @@
+.grid-background {
+    --grid-line-color: rgba(0, 0, 0, 0);
+    --grid-thick-line-color: rgba(0, 0, 0, 0);
+    --grid-background-color: rgba(50, 50, 50, 1);
+}
+
+.graph-view {
+    overflow: hidden;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.backstop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content-view-container {
+    position: absolute;
+}
+
+.graph-element {
+    position: absolute;
+}
+
+.node {
+    color: #b2b2b2;
+    background-color: rgba(25, 25, 25, 1);
+    position: absolute;
+    border-radius: 0px;
+    border-width:3px 3px 3px 3px;
+    border-color: black;
+    min-width: 100px;
+}
+
+
+.node-selected {
+    border-color: rgba(255, 255, 0, 1);
+}
+
+.node-title {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    min-height: 50px;
+    border-bottom-width: 1px;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.node-title-label {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    margin: 10px;
+    -unity-text-align: middle-left;
+}
+
+.node-io {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+}
+
+.node-io-input {
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.node-io-output {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.node-extension {
+    background-color: rgba(63, 63, 63, 0.804);
+    flex-direction: column;
+}
+
+.port {
+    --port-color: rgba(240, 240, 255, 0.95);
+    --disabled-port-color: rgba(70, 70, 70, 0);
+    flex-grow: 1;
+    margin: 0px;
+    min-height: 40px;
+}
+
+.port-input {
+    flex-direction: row-reverse;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.port-output {
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.port-label-container {
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.port-label {
+    color: #b2b2b2;
+    align-self:center;
+    font-size: 18px;
+}
+
+.port-connector-box {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 100% 100% 100% 100%;
+    opacity: 0.6;
+    width: 15px;
+    height: 15px;
+}
+
+.port-connector-box:hover {
+    opacity: 1;
+    border-width: 3px 3px 3px 3px;
+}
+
+.port-connector-cap {
+    flex-grow: 1;
+    border-radius: 100% 100% 100% 100%;
+    margin: 2px 2px 2px 2px;
+}
+
+.edge {
+    --edge-width: 3;
+    --edge-width-selected: 3;
+    --layer: -10;
+    position: absolute;
+}
+
+
+.edge-cap {
+    border-radius: 100% 100% 100% 100%; /*12*/
+    width: 4px;
+    height: 4px;
+    background-color: rgba(146, 146, 146, 1);
+}
+
+.marquee {
+    position: absolute;
+    opacity: 0.25;
+}
