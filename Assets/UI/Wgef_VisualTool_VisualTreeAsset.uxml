@@ -1,0 +1,21 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Wgef_VisualTool_UIStyleSheet.uss?fileID=7433441132597879392&amp;guid=747430b54957c784bae068228876da95&amp;type=3#Wgef_VisualTool_UIStyleSheet" />
+    <engine:VisualElement name="Root" style="align-items: center; justify-content: center; flex-grow: 1; flex-shrink: 0; background-color: rgb(46, 46, 46); -unity-font-definition: url(&quot;project://database/Assets/UI/zpix.ttf?fileID=12800000&amp;guid=16104772a33b956459726c23ca8c0e68&amp;type=3#zpix&quot;); cursor: url(&quot;project://database/Assets/Images/Cursor.png?fileID=2800000&amp;guid=d29da338a064e40449e3700dc0e18e1a&amp;type=3#Cursor&quot;);">
+        <engine:Button text="讀取檔案" name="Button_Load" class="button_Load" style="display: flex;" />
+        <engine:VisualElement name="VisualTool" style="flex-grow: 1; flex-shrink: 0; align-self: stretch; flex-direction: column; display: none;">
+            <engine:VisualElement name="ToolBar" style="flex-grow: 1; min-height: 60px; flex-direction: row; font-size: 28px; margin-bottom: 5px; margin-top: 5px; margin-right: 5px; margin-left: 5px;">
+                <engine:Button text=" 讀檔" name="Button_LoadFile" icon-image="project://database/Assets/Images/Load.png?fileID=2800000&amp;guid=e960e7bb6a276cd439d8a821e11e5314&amp;type=3#Load" class="button_Toolbar" />
+                <engine:VisualElement style="width: 5px;" />
+                <engine:Button text=" 存檔" icon-image="project://database/Assets/Images/Save.png?fileID=2800000&amp;guid=0062affa0b70e234794354e7a3272ee6&amp;type=3#Save" name="Button_SaveFile" class="button_Toolbar" />
+                <engine:VisualElement style="width: 85px;" />
+                <engine:Button text="初始化位置" name="Button_IntializePosition" class="button_Toolbar" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" style="flex-grow: 1; flex-shrink: 0; height: 95%; flex-direction: row;">
+                <engine:VisualElement name="Inspector" style="flex-grow: 1; background-size: 20% 100%; width: 20%;">
+                    <engine:ListView name="ListView_Maps" fixed-item-height="75" style="background-color: rgba(0, 0, 0, 0.12); font-size: 32px; color: rgb(255, 255, 255); flex-grow: 1; height: 60%; background-size: 100% 60%;" />
+                    <engine:Label text="物件資訊" name="Label_Infos" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; height: 40%; font-size: 24px; color: rgb(128, 128, 128); -unity-paragraph-spacing: 50px; white-space: normal; background-color: rgba(0, 0, 0, 0.47);" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
